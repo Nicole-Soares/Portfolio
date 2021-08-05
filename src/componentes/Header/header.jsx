@@ -8,7 +8,7 @@ export default function Header() {
       <div className="contenedor-nombre-boton">
         <h3 className="titulo">Nicole Soares</h3>
         <button type="button" class="nes-btn">
-          Modo Dark
+          Modo villano
         </button>
       </div>
       <div className="contenedor-imagen-datos">
