@@ -1,14 +1,23 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./header.css";
 import gatito from "../../imagenes/gatito.jpg";
+import {AppContext} from "../../AppContext/AppContext"
 
 export default function Header() {
+
+  const {dark, setDark} = useContext(AppContext)
+
+const click = () =>{
+   setDark(!dark)
+} 
+
+
   return (
     <div className="contenedor-header">
       <div className="contenedor-nombre-boton">
-        <h3 className="titulo">Nicole Soares</h3>
-        <button type="button" class="nes-btn">
-          Modo villano
+        <h3 className={`titulo-nombre ${dark ? "dark" : ""}`}>Nicole Soares</h3>
+        <button type="button" class="nes-btn-dark" onClick={click}>
+          Magia
         </button>
       </div>
       <div className="contenedor-imagen-datos">
@@ -22,9 +31,9 @@ export default function Header() {
           ></img>
         </div>
         <div className="contendor-datos">
-          <h3 className="titulo-datos">Caracteristicas del personaje:</h3>
+          <h3 className={`titulo-datos ${dark ? "dark" : ""}`}>Caracteristicas del personaje:</h3>
           <div className="datos">
-            <ul class="nes-list is-disc">
+            <ul class={`nes-list is-disc ${dark ? "dark" : ""}`}>
               <li>Player: Nicole</li>
               <li>Raza: Humana</li>
               <li>Nivel: 23</li>
@@ -43,7 +52,7 @@ export default function Header() {
         </div>
       </div>
       <div>
-        <div className="contenedor-tecnologias">
+        <div className={`contenedor-tecnologias ${dark ? "dark" : ""}`}>
           <div>
             <h3 className="tecnologias">Tecnologias</h3>
           </div>
