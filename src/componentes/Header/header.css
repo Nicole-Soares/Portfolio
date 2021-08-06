@@ -9,7 +9,7 @@
   display: flex;
   width: 100%;
   height: 60px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .titulo-nombre {
@@ -24,9 +24,8 @@
   text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px;
 }
 
-.titulo-nombre.dark{
+.titulo-nombre.dark {
   color: #fff;
-  
 }
 
 .nes-btn-dark {
@@ -71,6 +70,7 @@
 }
 
 .titulo-datos {
+  display: flex;
   width: 100%;
   margin-top: 10px;
   color: #fff870;
@@ -78,7 +78,7 @@
   text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px;
 }
 
-.titulo-datos.dark{
+.titulo-datos.dark {
   color: #fff;
 }
 
@@ -93,48 +93,58 @@
   color: black;
 }
 
-.nes-list.dark{
+.nes-list.dark {
   color: #fff;
 }
 
 .contenedor-tecnologias {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 250px;
+  height: 80%;
   border-style: solid;
   border-image-source: url(../../imagenes/border-image-golden.png);
   border-image-repeat: repeat;
   border-image-slice: 4 4 4 4;
-  border-image-width: 18px;
+  border-image-width: -5%;
   border-width: 15px;
-  padding: 12px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   background: url(../../imagenes/background-image-golden.png) repeat repeat;
-  background-clip: padding-box;
-  background-origin: padding-box;
-  background-position: center;
+ 
+  
 }
 
-.contenedor-tecnologias.dark{
+.contenedor-tecnologias.dark {
   background: transparent;
+}
+
+.contenedor-titulo-tecnologias{
+  width: 100%;
+  height: 100%;
 }
 
 .tecnologias {
   display: flex;
+  height: 100%;
+  width: 100%;
   margin-top: 20px;
   justify-content: space-evenly;
   text-align: center;
   color: #fff870;
+  font-size: 20px;
   text-decoration-line: underline;
   text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px;
+}
+
+.tecnologias.dark {
+  color: #fff;
 }
 
 .iconos {
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 .icono-espada {
@@ -240,4 +250,98 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1275px) and (min-width: 801px) {
+  .titulo-nombre {
+    font-size: 25px;
+  }
+
+  .titulo-datos {
+    font-size: 15px;
+  }
+
+  .iconos{
+    flex-direction: column;
+  }
+
+  .icono-espada{
+    width: 30%;
+    
+  }
+
+  .icono-escudo{
+    width: 30%;
+  }
+
+  .icono-armadura{
+    width: 30%;
+  }
+  
+  .icono-casco{
+    width: 30%;
+  }
+
+  .icono-anillo{
+    width: 30%;
+  }
+
+  .icono-pocion{
+    width: 30%;
+  }
+
+  .icono-magia{
+    width: 30%;
+  }
+}
+@media (max-width: 800px) and (min-width: 200px) {
+  .titulo-nombre {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-imagen-datos {
+    flex-direction: column;
+  }
+
+  .contenedor-datos {
+    width: 100%;
+  }
+
+  .contenedor-imagen {
+    width: 100%;
+  }
+
+  .iconos{
+    flex-direction: column;
+  }
+
+  .icono-espada{
+    width: 30%;
+    
+  }
+
+  .icono-escudo{
+    width: 30%;
+  }
+  
+  .icono-armadura{
+    width: 30%;
+  }
+
+  .icono-casco{
+    width: 30%;
+  }
+
+  .icono-anillo{
+    width: 30%;
+  }
+
+  .icono-pocion{
+    width: 30%;
+  }
+
+  .icono-magia{
+    width: 30%;
+  }
 }

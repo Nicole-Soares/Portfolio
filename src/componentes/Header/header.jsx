@@ -1,16 +1,14 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./header.css";
 import gatito from "../../imagenes/gatito.jpg";
-import {AppContext} from "../../AppContext/AppContext"
+import { AppContext } from "../../AppContext/AppContext";
 
 export default function Header() {
+  const { dark, setDark } = useContext(AppContext);
 
-  const {dark, setDark} = useContext(AppContext)
-
-const click = () =>{
-   setDark(!dark)
-} 
-
+  const click = () => {
+    setDark(!dark);
+  };
 
   return (
     <div className="contenedor-header">
@@ -31,7 +29,9 @@ const click = () =>{
           ></img>
         </div>
         <div className="contendor-datos">
-          <h3 className={`titulo-datos ${dark ? "dark" : ""}`}>Caracteristicas del personaje:</h3>
+          <h3 className={`titulo-datos ${dark ? "dark" : ""}`}>
+            Caracteristicas del personaje:
+          </h3>
           <div className="datos">
             <ul class={`nes-list is-disc ${dark ? "dark" : ""}`}>
               <li>Player: Nicole</li>
@@ -51,10 +51,10 @@ const click = () =>{
           </div>
         </div>
       </div>
-      <div>
+      
         <div className={`contenedor-tecnologias ${dark ? "dark" : ""}`}>
           <div>
-            <h3 className="tecnologias">Tecnologias</h3>
+            <h3 className={`tecnologias ${dark ? "dark" : ""}`}>Tecnologias</h3>
           </div>
           <div className="iconos">
             <div className="icono-espada">HTML</div>
@@ -66,7 +66,6 @@ const click = () =>{
             <div className="icono-magia">GitHub</div>
           </div>
         </div>
-      </div>
       
     </div>
   );

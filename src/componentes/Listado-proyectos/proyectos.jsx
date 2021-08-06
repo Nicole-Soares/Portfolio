@@ -1,15 +1,17 @@
-import React from "react"
+import React, { useContext } from "react"
 import "./proyectos.css"
 import proyecto from "../../imagenes-proyectos/proyecto-1.png"
 import proyectoDos from "../../imagenes-proyectos/proyecto-2.png"
 import proyectoTres from "../../imagenes-proyectos/proyecto-3.png"
+import { AppContext } from "../../AppContext/AppContext"
 
 export default function Proyectos (){
+const {dark} = useContext(AppContext)
 
     return(
-        <div className="contenedor-proyectos-titulo">
+        <div className={`contenedor-proyectos-titulo ${dark ? "dark" : ""}`}>
             <div className="contenedor-titulo">
-                <h3 className="titulo">Proyectos</h3>
+                <h3 className={`titulo ${dark ? "dark" : ""}`}>Proyectos</h3>
             </div>
             <div className="contenedor-proyectos">
             <div class="proyecto-uno">
