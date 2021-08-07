@@ -14,9 +14,12 @@ export default function Header() {
     <div className="contenedor-header">
       <div className="contenedor-nombre-boton">
         <h3 className={`titulo-nombre ${dark ? "dark" : ""}`}>Nicole Soares</h3>
-        <button type="button" class="nes-btn-dark" onClick={click}>
-          Magia
-        </button>
+        <section className="message-right">
+          <div className="nes-balloon from-right">
+            <p>Click en el gato !</p>
+          </div>
+        </section>
+        <i class="nes-octocat animate" onClick={click}></i>
       </div>
       <div className="contenedor-imagen-datos">
         <div className="contenedor-imagen">
@@ -33,7 +36,7 @@ export default function Header() {
             Caracteristicas del personaje:
           </h3>
           <div className="datos">
-            <ul class={`nes-list is-disc ${dark ? "dark" : ""}`}>
+            <ul className={`nes-list is-disc ${dark ? "dark" : ""}`}>
               <li>Player: Nicole</li>
               <li>Raza: Humana</li>
               <li>Nivel: 23</li>
@@ -43,30 +46,36 @@ export default function Header() {
             </ul>
           </div>
           <div className="boton-cv">
-            <i class="snes-jp-logo"></i>
-            <a className="nes-btn" href="#">
+            <i className="snes-jp-logo"></i>
+            <a
+              className="nes-btn"
+              href="https://www.linkedin.com/in/nicole-soares-6a23a7201/"
+            >
               Mirar CV
             </a>
             <i class="snes-jp-logo"></i>
           </div>
         </div>
       </div>
-      
-        <div className={`contenedor-tecnologias ${dark ? "dark" : ""}`}>
-          <div>
-            <h3 className={`tecnologias ${dark ? "dark" : ""}`}>Tecnologias</h3>
-          </div>
-          <div className="iconos">
-            <div className="icono-espada">HTML</div>
-            <div className="icono-escudo">CSS</div>
-            <div className="icono-armadura">Javascript</div>
-            <div className="icono-casco">React</div>
-            <div className="icono-anillo">React Native</div>
-            <div className="icono-pocion">Python</div>
-            <div className="icono-magia">GitHub</div>
-          </div>
+
+      <div className={`contenedor-tecnologias ${dark ? "dark" : ""}`}>
+        <div className="contenedor-titulo-tecnologias">
+          <h3 className={`tecnologias ${dark ? "dark" : ""}`}>Tecnologias</h3>
         </div>
-      
+        <div className="iconos">
+          <div className={`icono-espada ${dark ? "dark" : ""}`}>HTML</div>
+          <div className={`icono-escudo ${dark ? "dark" : ""}`}>CSS</div>
+          <div className={`icono-armadura ${dark ? "dark" : ""}`}>
+            Javascript
+          </div>
+          <div className={`icono-casco ${dark ? "dark" : ""}`}>React</div>
+          <div className={`icono-anillo ${dark ? "dark" : ""}`}>
+            React Native
+          </div>
+          <div className={`icono-pocion ${dark ? "dark" : ""}`}>Python</div>
+          <div className={`icono-magia ${dark ? "dark" : ""}`}>GitHub</div>
+        </div>
+      </div>
     </div>
   );
 }
