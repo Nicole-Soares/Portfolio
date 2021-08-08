@@ -32,6 +32,9 @@ export default function Proyectos() {
             >
               Ver Repositorio
             </a>
+            <a href="https://nicole-soares.github.io/pagina-estatica/" className="proyecto-link">
+              Ver Demo
+            </a>
           </div>
         </div>
         <div className="proyecto-dos">
@@ -47,10 +50,16 @@ export default function Proyectos() {
               Clon de una pagina web de reserva de hoteles
             </p>
             <a
-              href="https://github.com/Nicole-Soares/Pagina-de-hoteles"
+              href="https://github.com/Nicole-Soares/pagina-de-hoteles"
               className="proyecto-link-dos"
             >
               Ver Repositorio
+            </a>
+            <a
+              href="https://nicole-soares.github.io/pagina-de-hoteles/"
+              className="proyecto-link-dos"
+            >
+              Ver Demo
             </a>
           </div>
         </div>
@@ -72,8 +81,9 @@ export default function Proyectos() {
             >
               Ver Repositorio
             </a>
-            <a href="https://nicole-soares.github.io/pagina-de-gifs/"
-            className="proyecto-link-tres"
+            <a
+              href="https://nicole-soares.github.io/pagina-de-gifs/"
+              className="proyecto-link-tres"
             >
               Ver Demo
             </a>
