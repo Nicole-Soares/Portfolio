@@ -52,7 +52,6 @@ export default function Proyectos() {
             >
               Ver Repositorio
             </a>
-            
           </div>
         </div>
         <div className="proyecto-tres">
@@ -73,7 +72,11 @@ export default function Proyectos() {
             >
               Ver Repositorio
             </a>
-            
+            <a href="https://nicole-soares.github.io/pagina-de-gifs/"
+            className="proyecto-link-tres"
+            >
+              Ver Demo
+            </a>
           </div>
         </div>
       </div>

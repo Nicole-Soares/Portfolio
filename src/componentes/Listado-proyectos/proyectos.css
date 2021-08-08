@@ -89,12 +89,12 @@
 
 .descripcion-proyecto-uno {
   text-align: center;
-  font-size: 0.5rem ;
+  font-size: 0.5rem;
 }
 
 .proyecto-link {
   text-align: center;
-  font-size: 0.7rem ;
+  font-size: 0.7rem;
 }
 .proyecto-uno:hover .transparente,
 .proyecto-uno:active .transparente {
@@ -139,17 +139,17 @@
 }
 
 .nombre-del-proyecto-dos {
-  font-size: 0.8rem ;
+  font-size: 0.8rem;
 }
 
 .descripcion-proyecto-dos {
   text-align: center;
-  font-size: 0.5rem ;
+  font-size: 0.5rem;
 }
 
 .proyecto-link-dos {
   text-align: center;
-  font-size: 0.7rem ;
+  font-size: 0.7rem;
 }
 .proyecto-dos:hover .transparente-dos,
 .proyecto-dos:active .transparente-dos {
@@ -183,6 +183,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -194,7 +197,7 @@
 }
 
 .nombre-del-proyecto-tres {
-  font-size: 0.8rem ;
+  font-size: 0.8rem;
 }
 
 .descripcion-proyecto-tres {
@@ -204,7 +207,7 @@
 
 .proyecto-link-tres {
   text-align: center;
-  font-size: 0.7rem ;
+  font-size: 0.7rem;
 }
 .proyecto-tres:hover .transparente-tres,
 .proyecto-dos:active .transparente-tres {
@@ -217,12 +220,11 @@
 }
 
 @media (max-width: 1275px) and (min-width: 801px) {
-
-  .contenedor-proyectos-titulo{
+  .contenedor-proyectos-titulo {
     position: relative;
     top: 430px;
   }
-  
+
   .titulo {
     margin-top: 20px;
   }
@@ -240,10 +242,9 @@
   }
 }
 @media (max-width: 800px) and (min-width: 200px) {
-
-  .contenedor-proyectos-titulo{
-  position: relative;
-  top: 950px;
+  .contenedor-proyectos-titulo {
+    position: relative;
+    top: 950px;
   }
 
   .titulo {

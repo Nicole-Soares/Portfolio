@@ -157,6 +157,7 @@
   display: flex;
   width: 100%;
   height: 100%;
+  
 }
 
 .icono-espada {
@@ -172,8 +173,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 2s, height 4s
 }
 
+.icono-espada:hover{
+  width: 15%;
+  height: 150px;
+}
 .icono-espada.dark {
   background-image: url(../../imagenes-tecnologias/castillo.gif);
   color: #fff;
