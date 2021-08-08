@@ -173,13 +173,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: width 2s, height 4s
+  transition: width 2ms hight 2ms;
 }
 
-.icono-espada:hover{
-  width: 15%;
-  height: 150px;
+.icono-espada:hover {
+  width: 13%;
+  height: 100px;
 }
+
 .icono-espada.dark {
   background-image: url(../../imagenes-tecnologias/castillo.gif);
   color: #fff;
@@ -201,6 +202,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 2ms hight 2ms;
+}
+
+.icono-escudo:hover {
+  width: 13%;
+  height: 100px;
 }
 
 .icono-escudo.dark {
@@ -224,6 +231,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 2ms hight 2ms;
+}
+
+.icono-armadura:hover {
+  width: 13%;
+  height: 100px;
 }
 
 .icono-armadura.dark {
@@ -247,6 +260,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 2ms hight 2ms;
+}
+
+.icono-casco:hover {
+  width: 13%;
+  height: 100px;
 }
 
 .icono-casco.dark {
@@ -270,6 +289,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 2ms hight 2ms;
+}
+
+.icono-anillo:hover {
+  width: 13%;
+  height: 100px;
 }
 
 .icono-anillo.dark {
@@ -293,6 +318,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 2ms hight 2ms;
+}
+
+.icono-pocion:hover {
+  width: 13%;
+  height: 100px;
 }
 
 .icono-pocion.dark {
@@ -316,6 +347,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 2ms hight 2ms;
+}
+
+.icono-magia:hover {
+  width: 13%;
+  height: 100px;
 }
 
 .icono-magia.dark {

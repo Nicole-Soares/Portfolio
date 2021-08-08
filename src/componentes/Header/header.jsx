@@ -4,12 +4,13 @@ import gatito from "../../imagenes/gatito.jpg";
 import { AppContext } from "../../AppContext/AppContext";
 
 export default function Header() {
-  const { dark, setDark } = useContext(AppContext);
+  const { dark, setDark} = useContext(AppContext);
 
   const click = () => {
-    setDark(!dark);
+    return setDark(!dark);
   };
 
+  
   return (
     <div className="contenedor-header">
       <div className="contenedor-nombre-boton">
