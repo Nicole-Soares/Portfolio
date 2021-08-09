@@ -27,7 +27,7 @@ export default function Proyectos() {
               Clon de una pagina web estatica
             </p>
             <a
-              href="https://github.com/Nicole-Soares/PrimerProyecto"
+              href="https://github.com/Nicole-Soares/pagina-estatica"
               className="proyecto-link"
             >
               Ver Repositorio

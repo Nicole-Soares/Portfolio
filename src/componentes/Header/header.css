@@ -27,9 +27,7 @@
   color: #fff;
 }
 
-.label {
-  display: flex;
-}
+
 
 .message-right {
   height: 100%;
@@ -71,7 +69,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background-color: #fff;
+  background-color: transparent;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center;

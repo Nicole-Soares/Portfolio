@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./header.css";
-import gatito from "../../imagenes/gatito.jpg";
+import image from "../../imagenes/image.jpg";
 import { AppContext } from "../../AppContext/AppContext";
 
 export default function Header() {
@@ -26,10 +26,10 @@ export default function Header() {
         <div className="contenedor-imagen">
           <img
             className="imagen"
-            src={gatito}
+            src={image}
             alt="imagen-personal"
-            width="80%"
-            height="400px"
+            width="100%"
+            height="100%"
           ></img>
         </div>
         <div className="contendor-datos">
