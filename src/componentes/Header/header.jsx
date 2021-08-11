@@ -1,15 +1,16 @@
 import React, { useContext } from "react";
 import "./header.css";
-import gatito from "../../imagenes/gatito.jpg";
+import imagenPersonal from "../../imagenes/imagenPersonal.jpg";
 import { AppContext } from "../../AppContext/AppContext";
 
 export default function Header() {
-  const { dark, setDark } = useContext(AppContext);
+  const { dark, setDark} = useContext(AppContext);
 
   const click = () => {
-    setDark(!dark);
+    return setDark(!dark);
   };
 
+  
   return (
     <div className="contenedor-header">
       <div className="contenedor-nombre-boton">
@@ -25,10 +26,10 @@ export default function Header() {
         <div className="contenedor-imagen">
           <img
             className="imagen"
-            src={gatito}
+            src={imagenPersonal}
             alt="imagen-personal"
-            width="80%"
-            height="400px"
+            width="100%"
+            height="100%"
           ></img>
         </div>
         <div className="contendor-datos">

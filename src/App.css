@@ -1,15 +1,44 @@
+@import url('https://fonts.googleapis.com/css2? family = Press + Start + 2P & display = swap');
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Press Start 2P', cursiva;
 }
 
-html {
-  width: 100%;
-  height: 100%;
+html,
+body {
+  scroll-behavior: smooth;
+  image-rendering: pixelated;
 }
 
-.App {
+.fondo-viewport ::-webkit-scrollbar, .fondo-viewport::-webkit-scrollbar {
+  width: 18px;
+  
+}
+
+.fondo-viewport::-webkit-scrollbar-button, .fondo-viewport::-webkit-scrollbar-button {
+  background-image: url(./imagenes/scrollbar-button.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fondo-viewport ::-webkit-scrollbar-track, .fondo-viewport::-webkit-scrollbar-track {
+  background-image: url(./imagenes/scrollbar-track.png);
+  background-size: 18px 60px;
+  background-repeat: repeat-y;
+}
+
+.fondo-viewport::-webkit-scrollbar-thumb, .fondo-viewport:-webkit-scrollbar-thumb {
+  background-image: url(./imagenes/scrollbar-thumb.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.App,
+label {
   display: flex;
   text-align: center;
   display: flex;
@@ -18,11 +47,11 @@ html {
   background-color: black;
   background: url(./imagenes/dragon.jpg);
   background-size: 50%;
+  cursor: url(./imagenes/mouse.png), auto;
 }
 
-
-.App.dark{
-  background:url(./imagenes/nocturno.jpg) ;
+.App.dark {
+  background: url(./imagenes/nocturno.jpg);
   background-size: 50%;
 }
 
@@ -30,7 +59,6 @@ html {
   display: flex;
   flex-direction: column;
   width: 60%;
- 
   overflow-x: hidden;
   overflow-y: scroll;
   border-style: solid;
@@ -46,6 +74,6 @@ html {
   background-position: center;
 }
 
-.fondo-viewport.dark{
+.fondo-viewport.dark {
   background: transparent;
 }
