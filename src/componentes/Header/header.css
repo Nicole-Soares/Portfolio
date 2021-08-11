@@ -16,7 +16,7 @@
   width: 100%;
   height: 100%;
   justify-content: center;
-  font-size: 40px;
+  font-size: 30px;
   color: #fff870;
   letter-spacing: 2px;
   text-decoration-line: underline;
@@ -27,25 +27,23 @@
   color: #fff;
 }
 
-
-
-.message-right {
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-}
-
 .nes-balloon {
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 70%;
+  
 }
 
 .nes-balloon p {
   font-size: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -10px;
 }
 
 .nes-octocat {
-  margin-right: 20px;
+  margin-right: 50px;
+ 
 }
 
 .contenedor-imagen-datos {
@@ -408,6 +406,23 @@
     margin-bottom: 20px;
   }
 
+  .message-right{
+ display: none;
+  }
+
+  .nes-balloon{
+    display: none;
+  }
+
+  .nes-balloon p{
+    display: none;
+  }
+
+  .nes-octocat{
+    position: relative;
+    right: 10px;
+  }
+
   .contenedor-imagen-datos {
     flex-direction: column;
   }
@@ -420,9 +435,13 @@
     width: 100%;
   }
 
+  .titulo-datos{
+    font-size: 15px;
+  }
+
   .contenedor-tecnologias {
     position: relative;
-    top: 480px;
+    top: 380px;
   }
 
   .iconos {
