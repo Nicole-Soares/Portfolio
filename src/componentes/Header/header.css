@@ -173,8 +173,11 @@
 }
 
 .icono-espada:hover {
-  width: 13%;
-  height: 100px;
+  width: 15%;
+  height: 100%;
+  
+  border-left: blue 5px solid;
+  border-bottom: blue 5px solid;
 }
 
 .icono-espada.dark {
