@@ -4,20 +4,19 @@ import imagenPersonal from "../../imagenes/imagenPersonal.jpg";
 import { AppContext } from "../../AppContext/AppContext";
 
 export default function Header() {
-  const { dark, setDark} = useContext(AppContext);
+  const { dark, setDark } = useContext(AppContext);
 
   const click = () => {
     return setDark(!dark);
   };
 
-  
   return (
     <div className="contenedor-header">
       <div className="contenedor-nombre-boton">
         <h3 className={`titulo-nombre ${dark ? "dark" : ""}`}>Nicole Soares</h3>
         <section className="message-right">
           <div className="nes-balloon from-right">
-            <p>Click en el gato !</p>
+            <p className="mensaje">Click en el gato</p>
           </div>
         </section>
         <i class="nes-octocat animate" onClick={click}></i>

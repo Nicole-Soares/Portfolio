@@ -7,6 +7,7 @@ import proyectoCuatro from "../../imagenes-proyectos/proyecto-4.png";
 import proyectoCinco from "../../imagenes-proyectos/proyecto-5.png";
 import proyectoSeis from "../../imagenes-proyectos/proyecto-6.png";
 import proyectoSiete from "../../imagenes-proyectos/proyecto-7.jpg";
+import proyectoOcho from "../../imagenes-proyectos/proyecto-8.jpg";
 import { AppContext } from "../../AppContext/AppContext";
 
 export default function Proyectos() {
@@ -220,6 +221,36 @@ export default function Proyectos() {
             </a>
             <a
               href="https://www.youtube.com/watch?v=viqDbiFB_ng"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link"
+            >
+              Ver Demo
+            </a>
+          </div>
+        </div>
+        <div className="proyecto">
+          <img
+            src={proyectoOcho}
+            width="100%"
+            height="250px"
+            alt="Modelo de pagina"
+          />
+          <div class="transparente">
+            <h3 class="nombre-del-proyecto">Tienda de ropa</h3>
+            <p class="descripcion-proyecto">
+             E-commerce sobre venta y compra de ropa
+            </p>
+            <a
+              href="https://github.com/Nicole-Soares/feriaRopa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link"
+            >
+              Ver Repositorio
+            </a>
+            <a
+              href="https://youtu.be/vzMDbNfw62U"
               target="_blank"
               rel="noopener noreferrer"
               className="proyecto-link"

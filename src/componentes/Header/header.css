@@ -27,9 +27,14 @@
   color: #fff;
 }
 
+.message-right{
+ color: black;
+ line-height: 11px;
+ margin-top: 5px;
+}
 .nes-balloon {
   height: 80%;
-  width: 70%;
+  width: 90%;
   
 }
 
@@ -366,7 +371,10 @@
   .titulo-nombre {
     font-size: 25px;
   }
-
+  .nes-balloon{
+    width: 100%;
+    height: 80%;
+  }
   .titulo-datos {
     font-size: 15px;
   }
