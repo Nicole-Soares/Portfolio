@@ -8,6 +8,7 @@ import proyectoCinco from "../../imagenes-proyectos/proyecto-5.png";
 import proyectoSeis from "../../imagenes-proyectos/proyecto-6.png";
 import proyectoSiete from "../../imagenes-proyectos/proyecto-7.jpg";
 import proyectoOcho from "../../imagenes-proyectos/proyecto-8.jpg";
+import proyectoNueve from "../../imagenes-proyectos/proyecto-9.jpg";
 import { AppContext } from "../../AppContext/AppContext";
 
 export default function Proyectos() {
@@ -28,9 +29,7 @@ export default function Proyectos() {
           />
           <div class="transparente">
             <h3 class="nombre-del-proyecto">Modelo de pagina web</h3>
-            <p class="descripcion-proyecto">
-              Clon de una pagina web estatica
-            </p>
+            <p class="descripcion-proyecto">Clon de una pagina web estatica</p>
             <a
               href="https://github.com/Nicole-Soares/PrimerProyecto"
               target="_blank"
@@ -88,9 +87,7 @@ export default function Proyectos() {
           />
           <div className="transparente">
             <h3 class="nombre-del-proyecto">Modelo de pagina web</h3>
-            <p class="descripcion-proyecto">
-              Clon de una pagina web de gifs
-            </p>
+            <p class="descripcion-proyecto">Clon de una pagina web de gifs</p>
             <a
               href="https://github.com/Nicole-Soares/pagina-de-gifs"
               target="_blank"
@@ -179,7 +176,8 @@ export default function Proyectos() {
           <div class="transparente">
             <h3 class="nombre-del-proyecto">Modelo de escaner de DNI</h3>
             <p class="descripcion-proyecto">
-              Escaner que recibe una lista de personas y marca si tienen permitido pasar o no
+              Escaner que recibe una lista de personas y marca si tienen
+              permitido pasar o no
             </p>
             <a
               href="https://github.com/Nicole-Soares/escanerDNI"
@@ -239,7 +237,7 @@ export default function Proyectos() {
           <div class="transparente">
             <h3 class="nombre-del-proyecto">Tienda de ropa</h3>
             <p class="descripcion-proyecto">
-             E-commerce sobre venta y compra de ropa
+              E-commerce sobre venta y compra de ropa
             </p>
             <a
               href="https://github.com/Nicole-Soares/feriaRopa"
@@ -251,6 +249,34 @@ export default function Proyectos() {
             </a>
             <a
               href="https://youtu.be/vzMDbNfw62U"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link"
+            >
+              Ver Demo
+            </a>
+          </div>
+        </div>
+        <div className="proyecto">
+          <img
+            src={proyectoNueve}
+            width="100%"
+            height="250px"
+            alt="Modelo de pagina"
+          />
+          <div class="transparente">
+            <h3 class="nombre-del-proyecto">Portal noticias y podcasts</h3>
+            <p class="descripcion-proyecto">App de noticias y podcasts</p>
+            <a
+              href="https://github.com/Nicole-Soares/NextIdea4U"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link"
+            >
+              Ver Repositorio
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=8hy3bNMrq1Y"
               target="_blank"
               rel="noopener noreferrer"
               className="proyecto-link"

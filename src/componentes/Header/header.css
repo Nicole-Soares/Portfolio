@@ -81,13 +81,16 @@
 .contendor-datos {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  align-self: center;
+  margin-top: 20px;
 }
 
 .titulo-datos {
   display: flex;
   width: 100%;
   margin-top: 10px;
+  font-size: 0.8rem;
   color: #fff870;
   text-decoration-line: underline;
   text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px;
@@ -178,11 +181,8 @@
 }
 
 .icono-espada:hover {
-  width: 15%;
-  height: 100%;
-  
-  border-left: blue 5px solid;
-  border-bottom: blue 5px solid;
+  width: 13%;
+  height: 100px;
 }
 
 .icono-espada.dark {
@@ -452,7 +452,7 @@
 
   .contenedor-tecnologias {
     position: relative;
-    top: 380px;
+    top: 240px;
   }
    
   .tecnologias{

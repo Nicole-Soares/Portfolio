@@ -17,6 +17,7 @@
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center;
+
 }
 
 .contenedor-proyectos-titulo.dark {
@@ -49,6 +50,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
 }
 
 .proyecto {
@@ -232,7 +234,8 @@
 @media (max-width: 1275px) and (min-width: 801px) {
   .contenedor-proyectos-titulo {
     position: relative;
-    top: 430px;
+    top: 400px;
+   
   }
 
   .titulo {
@@ -254,12 +257,28 @@
 @media (max-width: 800px) and (min-width: 200px) {
   .contenedor-proyectos-titulo {
     position: relative;
-    top: 950px;
+    top: 800px;
+   
+  }
+
+  .contenedor-proyectos {
+   flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
   }
 
   .titulo {
     margin-top: 20px;
     font-size: 15px;
+  }
+
+  .proyecto-link{
+font-size: 7px;
+  }
+
+  .nombre-del-proyecto{
+    font-size: 00.5rem;
   }
 
   .proyecto-uno {
